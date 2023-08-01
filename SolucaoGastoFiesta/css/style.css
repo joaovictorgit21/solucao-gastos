@@ -1,0 +1,137 @@
+body
+{
+    background-color: rgb(78, 78, 78);
+}
+
+/* Design Form */
+.screnn-full
+{
+    background-color: rgb(71, 71, 71);
+    width: 350px;
+    height: 450px;
+    position: relative;
+    left: 35rem;
+    top: 7rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0px 70px;
+    box-shadow: inset 8px 8px 6px rgb(0, 0, 0),
+                8px 8px 5px rgb(0, 0, 0);
+    border: .1rem solid #fefefe09;
+    font-family: monospace;
+}
+
+h1
+{
+    font-size: xx-large;
+}
+
+label
+{
+    font-size: x-large;
+    position: relative;
+    top: 3rem;
+    text-shadow: 0 0 10px rgb(218, 213, 213);
+}
+
+div#cadastro a:link
+{
+    color: #000000;
+}
+
+/* System input */
+
+input
+{
+    background-color: black;
+    width: 20rem;
+    height: 2rem;
+    color: gray;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    margin-top: 2rem;
+    top: 3rem;
+}
+
+input:hover
+{
+    animation: brilho infinite 3s ease-in;
+}
+
+@keyframes brilho {
+    50% {
+        background: rgb(39, 39, 39);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+
+}
+
+#email
+{
+    position: relative;
+    top: 40px;
+}
+
+#password
+{
+    position: relative;
+    top: 40px;
+}
+
+#Username
+{
+    position: relative;
+    top: 40px;
+}
+/* System button */
+#btn
+{
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #1a1919;
+    z-index: 1;
+    background: #000000;
+    position: relative;
+    top: 7rem;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+#btn::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+   
+#btn:hover 
+{
+    color: #696969;
+}
+   
+#btn:hover::before 
+{
+    width: 100%;
+}
+
