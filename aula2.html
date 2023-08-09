@@ -12,16 +12,18 @@
 <body>
 
         <div class="header">
-            <img src="./img/logo-marista.png" alt="">
+            <img class="logo" src="./img/logo-marista.png">
         </div>
 
     <br><br>
+
+    <label id="nome"> Nome: </label>
+    <label id="produto">Produto: </label>
+    <label id="preco">Preço: </label>
+
     <div class="input-group"> 
-        <label id="nome"> Nome: </label>
         <input class="form-control" id="nomeUser" type="text">
-        <label id="produtor">Produto: </label>
         <input class="form-control" id="prodUser" type="text" >
-        <label id="preco">Preço: </label>
         <input class="form-control" id="precoUser" type="text">
         <button class="btn btn-primary" type="button" onclick="salvarDados()">Salvar</button> 
     </div>

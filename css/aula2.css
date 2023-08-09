@@ -10,3 +10,13 @@ body, html
     width: 100%;
     background: rgba(0,54,100,255);
 }
+
+#produto
+{
+    padding-left: 380px;
+}
+
+#preco
+{
+    padding-left: 370px;
+}
