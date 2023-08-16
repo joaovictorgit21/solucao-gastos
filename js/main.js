@@ -80,11 +80,3 @@ function excluir(i)
     listValues.splice((i - 1), 1);
     document.getElementById("tabela").deleteRow(i);
 }
-
-function countValues() {
-    let valuesTotal = 0;
-    listValues.forEach(values => {
-        valuesTotal += parseInt(values);
-    });
-    return valuesTotal;
-};
